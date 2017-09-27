@@ -1,0 +1,34 @@
+{
+    "name": "cubetools/react-settle-promise",
+    "description": "settle function for react-promise",
+    "autoload": {
+        "psr-4": { "CubeTools\\React\\SettlePromise\\": "src/" },
+        "files": [ "src/functions.php" ]
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\CubeTools\\React\\SettlePromise\\": "tests/" }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "react/promise": "^2.1.0|^1.2.0"
+    },
+    "require-dev": {
+        "react/promise-timer": "^1.0.0"
+    },
+    "suggest": {
+        "react/promise-timer": "for settleWithTimeout()"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CUBE Team of Emch + Berger AG Bern",
+            "homepage": "http://www.cubetools.ch"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/EmchBerger/react-settle-promise/issues/"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
