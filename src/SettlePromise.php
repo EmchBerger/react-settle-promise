@@ -66,6 +66,10 @@ class SettlePromise {
      */
     public static function settleWithTimeout(array $promisesOrValues, $timeout, LoopInterface $loop)
     {
+        if (!function_exists('\React\Promise\Timer\timeout')) {
+            throw new \LogicException('install react/promise-timer for using '.__METHOD__);
+        }
+
         return Promise\all(
             array_map(function($promiseOrValue) use ($timeout, $loop) {
                 $promise = Timer\timeout(
