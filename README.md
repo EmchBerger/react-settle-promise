@@ -34,7 +34,7 @@ use Clue\React\Block;
 
 $loop = \React\EventLoop\Factory::create();
 
-foreach(Block\await(SettlePromise\settleWithTimeout($promises), $loop) {
+foreach(Block\await(SettlePromise\settleWithTimeout($promises, 5, $loop), $loop) {
     if (SettlePromise\FULFILLED === $state['state']) {
         $promiseValue = $state['value'];
         ...
