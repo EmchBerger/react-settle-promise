@@ -46,8 +46,8 @@ foreach(Block\await(SettlePromise\settleWithTimeout($promises, 5, $loop), $loop)
 
 ```
 
-To replace the constants, subclass \CubeTools\React\SettlePromise\SettlePromise and define the class constants FULFILLED and REJECTED.
-Then use the class functions like `YourClass::settle(...)`.
+The return value are the same as in [guzzle/promises](https://github.com/guzzle/promises) and [js cujojs/when](https://github.com/cujojs/when/blob/master/docs/api.md#whensettle). When you want
+boolean values for the states, use \CubeTools\React\SettlePromise\SettleBoolean::settle().
 
 Installation
 ============
