@@ -26,7 +26,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/EmchBerger/react-settle-promise/issues/"
+        "issues": "https://github.com/EmchBerger/react-settle-promise/issues/",
+        "source": "https://github.com/EmchBerger/react-settle-promise/"
     },
     "config": {
         "sort-packages": true
